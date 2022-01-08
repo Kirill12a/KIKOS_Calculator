@@ -10,20 +10,24 @@
 		D2FF38372789D63900847075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF38362789D63900847075 /* AppDelegate.swift */; };
 		D2FF38392789D63900847075 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF38382789D63900847075 /* SceneDelegate.swift */; };
 		D2FF383B2789D63900847075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF383A2789D63900847075 /* ViewController.swift */; };
-		D2FF383E2789D63900847075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2FF383C2789D63900847075 /* Main.storyboard */; };
 		D2FF38402789D63A00847075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2FF383F2789D63A00847075 /* Assets.xcassets */; };
 		D2FF38432789D63A00847075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2FF38412789D63A00847075 /* LaunchScreen.storyboard */; };
+		D2FF384B2789D7A500847075 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF384A2789D7A500847075 /* Manager.swift */; };
+		EBC2DB8D56B18EB1904FC4A3 /* Pods_KIKOS_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A284CEB8DE165F18B4745F /* Pods_KIKOS_Calculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25A284CEB8DE165F18B4745F /* Pods_KIKOS_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KIKOS_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A8631ABA4AB5B2378DFF18 /* Pods-KIKOS_Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIKOS_Calculator.debug.xcconfig"; path = "Target Support Files/Pods-KIKOS_Calculator/Pods-KIKOS_Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		D2D0A52B319C8748E556A2D8 /* Pods-KIKOS_Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIKOS_Calculator.release.xcconfig"; path = "Target Support Files/Pods-KIKOS_Calculator/Pods-KIKOS_Calculator.release.xcconfig"; sourceTree = "<group>"; };
 		D2FF38332789D63900847075 /* KIKOS_Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIKOS_Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FF38362789D63900847075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2FF38382789D63900847075 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D2FF383A2789D63900847075 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D2FF383D2789D63900847075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2FF383F2789D63A00847075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2FF38422789D63A00847075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2FF38442789D63A00847075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2FF384A2789D7A500847075 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC2DB8D56B18EB1904FC4A3 /* Pods_KIKOS_Calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B6F8E37BB16A878CA33999D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40A8631ABA4AB5B2378DFF18 /* Pods-KIKOS_Calculator.debug.xcconfig */,
+				D2D0A52B319C8748E556A2D8 /* Pods-KIKOS_Calculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D2FF382A2789D63900847075 = {
 			isa = PBXGroup;
 			children = (
 				D2FF38352789D63900847075 /* KIKOS_Calculator */,
 				D2FF38342789D63900847075 /* Products */,
+				7B6F8E37BB16A878CA33999D /* Pods */,
+				F5593015FD2315AA325F0438 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +75,20 @@
 				D2FF38362789D63900847075 /* AppDelegate.swift */,
 				D2FF38382789D63900847075 /* SceneDelegate.swift */,
 				D2FF383A2789D63900847075 /* ViewController.swift */,
-				D2FF383C2789D63900847075 /* Main.storyboard */,
+				D2FF384A2789D7A500847075 /* Manager.swift */,
 				D2FF383F2789D63A00847075 /* Assets.xcassets */,
 				D2FF38412789D63A00847075 /* LaunchScreen.storyboard */,
 				D2FF38442789D63A00847075 /* Info.plist */,
 			);
 			path = KIKOS_Calculator;
+			sourceTree = "<group>";
+		};
+		F5593015FD2315AA325F0438 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25A284CEB8DE165F18B4745F /* Pods_KIKOS_Calculator.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2FF38472789D63A00847075 /* Build configuration list for PBXNativeTarget "KIKOS_Calculator" */;
 			buildPhases = (
+				C768E4C9D3228E300255F961 /* [CP] Check Pods Manifest.lock */,
 				D2FF382F2789D63900847075 /* Sources */,
 				D2FF38302789D63900847075 /* Frameworks */,
 				D2FF38312789D63900847075 /* Resources */,
+				77CDE4BF66DB6D58E8514AF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +153,52 @@
 			files = (
 				D2FF38432789D63A00847075 /* LaunchScreen.storyboard in Resources */,
 				D2FF38402789D63A00847075 /* Assets.xcassets in Resources */,
-				D2FF383E2789D63900847075 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77CDE4BF66DB6D58E8514AF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KIKOS_Calculator/Pods-KIKOS_Calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KIKOS_Calculator/Pods-KIKOS_Calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KIKOS_Calculator/Pods-KIKOS_Calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C768E4C9D3228E300255F961 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KIKOS_Calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2FF382F2789D63900847075 /* Sources */ = {
@@ -141,20 +208,13 @@
 				D2FF383B2789D63900847075 /* ViewController.swift in Sources */,
 				D2FF38372789D63900847075 /* AppDelegate.swift in Sources */,
 				D2FF38392789D63900847075 /* SceneDelegate.swift in Sources */,
+				D2FF384B2789D7A500847075 /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D2FF383C2789D63900847075 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2FF383D2789D63900847075 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D2FF38412789D63A00847075 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +344,7 @@
 		};
 		D2FF38482789D63A00847075 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40A8631ABA4AB5B2378DFF18 /* Pods-KIKOS_Calculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +355,7 @@
 				INFOPLIST_FILE = KIKOS_Calculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +373,7 @@
 		};
 		D2FF38492789D63A00847075 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2D0A52B319C8748E556A2D8 /* Pods-KIKOS_Calculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,7 +384,7 @@
 				INFOPLIST_FILE = KIKOS_Calculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
